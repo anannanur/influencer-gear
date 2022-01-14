@@ -5,13 +5,11 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 .container{
     max-width: 1200px;
     margin: 0 auto;
-}
-body{
-    background-color: #F1F3F8;
 }
 /* header styles  */
 header{
@@ -50,3 +48,64 @@ ul li a{
 .fa-search, .fa-shopping-cart{
     font-size: 24px;
 }
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 50px;
+    gap: 15px;
+    padding: 50px;
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.banner-title{
+   font-size: 52px;
+   font-weight: 700;
+   color: #080808;
+   line-height: 70px;
+
+}
+.banner-description{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 12px 0 18px 0;
+}
+.banner-image{
+    display: flex;
+    justify-content: center;
+    background: url(images/Circle\ design.svg) no-repeat;
+    background-position: center;
+    
+}
+.banner-image img{
+    width: 440px;
+    height: 414px;
+    transition: .8s;
+}
+.banner-image img:hover{
+    transform: scale(.8);
+}
+.primary-button{
+    display: flex;
+    padding: 12px 40px;
+    background: #E02C6D;
+    border: none;
+    color: white;
+    border-radius: 40px;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid #E02C6D;
+    transition: .8s ease;
+    margin-top: 5px;
+}
+.primary-button:hover{
+    border: 2px solid #E02C6D;
+    background-color: transparent;
+    color: #E02C6D;
+}
+
