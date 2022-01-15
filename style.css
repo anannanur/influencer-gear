@@ -1,4 +1,4 @@
-/* google font link  */
+/* font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@700&family=Poppins:wght@500;600;700&display=swap');
 
 /* common styles  */
@@ -12,26 +12,29 @@
     max-width: 1200px;
     margin: 0 auto;
 }
-/* header styles  */
+/* ------------------
+    header style 
+---------------------*/
 header{
    height: 100vh;
 }
 nav{
-    background-color: #4b4b4b;
     min-width: fit-content;
+    min-height: 80px;
+    padding: 25px 0;
 }
 .navbar{
     display: flex;
-    justify-content: space-between;
-    min-height: 80px;
+    justify-content: space-between;  
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 20px 0; 
 }
 .nav-logo{
-    color: #ffffff;
+    color: #3A3A3A;;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    font-size: 24px;
 }
 ul{
     display: flex;
@@ -43,7 +46,7 @@ ul li{
 ul li a{
     text-decoration: none;
     font-size: 16px;
-    color: #ffffff;
+    color: black;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
@@ -53,10 +56,8 @@ ul li a{
 .banner{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    margin-top: 50px;
+    margin-top: 75px;
     gap: 15px;
-    padding: 50px;
-    display: none;
 }
 .banner-content{
     display: flex;
@@ -67,8 +68,8 @@ ul li a{
 .banner-title{
    font-size: 52px;
    font-weight: 700;
-   color: #080808;
    line-height: 70px;
+   color: #3A3A3A;
 
 }
 .banner-description{
@@ -76,21 +77,7 @@ ul li a{
     font-size: 16px;
     line-height: 24px;
     margin: 12px 0 18px 0;
-}
-.banner-image{
-    display: flex;
-    justify-content: center;
-    background: url(images/Circle\ design.svg) no-repeat;
-    background-position: center;
-    
-}
-.banner-image img{
-    width: 440px;
-    height: 414px;
-    transition: .8s;
-}
-.banner-image img:hover{
-    transform: scale(.8);
+ 
 }
 .primary-button{
     display: flex;
@@ -103,25 +90,379 @@ ul li a{
     font-size: 16px;
     font-weight: 700;
     border: 2px solid #E02C6D;
-    transition: .8s ease;
+    transition: 1.1s;
     margin-top: 5px;
 }
 .primary-button:hover{
     border: 2px solid #E02C6D;
     background-color: transparent;
     color: #E02C6D;
+    transform: translate(30px);
 }
+.banner-image{
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.banner-image img{
+    width: 440px;
+    height: 414px;
+    transition: .8s;
+}
+.banner-image img:hover{
+    transform: scale(.8);
+}
+/* --------------------------
+    popular collection styles  
+ ---------------------------- */
+.products h1{
+    color: #3A3A3A;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+ } 
+.products-unit{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+.product{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin-bottom: 32px;
+    padding: 15px 15px 18px 15px;
+    width: 350px;
+
+}
+.product-img img{
+    width: 100%;
+}
+.product-title{
+    font-size: 28px;
+    font-weight: 600;
+    color: #18191F;
+    margin: 8px 0 10px 0;
+}
+.product-price{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.ratings{
+    display: flex;
+    align-items: center;
+}
+.fa-star,
+.fa-star-half-alt{
+    color: orange;
+    font-size: 12px;
+    margin-right: 4px;
+}
+.ratings span{
+    font-size: 16px;
+    color: #5E6366;
+    margin-left: 4px;
+    font-weight: 600;
+}
+.shifting-info{
+    font-family: Inter;
+    font-style: normal;
+    line-height: 143%;
+    font-size: 14px;
+    color: #787885;
+    letter-spacing: 0.018em;
+    font-weight: bold;
+}
+.see-more{
+    margin-left: 86%;
+    margin-top: 12px;
+}
+.see-more a{
+    color: #E02C6D;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+}
+.fa-arrow-right{
+    margin-left: 8px;
+}
+/* --------------------
+     testimonials style 
+----------------------*/
+.testimonials{
+    padding: 100px 0;
+}
+.testimonials-title{
+    color: #3A3A3A;
+    padding-bottom: 8px;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.testimonials-unit{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+.testimonial{
+    width: 350px;
+}
+.testimonials img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-left: -30px;
+    margin-top: -40px;
+    margin-bottom: 30px;
+    border: 5px solid #fff;
+}
+.review{
+    padding: 10px 10px 10px 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,.2);
+}
+.review .fa-twitter{
+    color: #E02C6D;
+}
+.review span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #E02C6D;
+} 
+
+/* ----------------------
+    footer section styles
+-------------------------- */
+footer{
+    text-align: center;
+    background: #0A0826;
+    color: #ffffff;
+    height: 250px;
+    padding: 50px 0;
+}
+footer h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+footer p{
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #D9DBE1;
+
+}
+.social-icons{
+    margin-top: 35px;
+}
+.social-icons a{
+    background-color: #22203B;
+    color: #ffffff;
+    padding: 7px 11px; 
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+/* ------------------
+    Media Queries
+--------------------- */
+
+/* Mobile devices */
+
 @media screen and (max-width: 688px) {
+    /* ------------------
+        header style 
+    ---------------------*/
+    header{
+        max-height: 680px;
+    }
     ul{
         display: none;
     }
     .navbar{
         justify-content: center;
     }
-    h2{
+    .nav-logo h3{
         font-size: 16px;
     }
     .banner{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .banner-image{
+        height: 257px;
+        width: 257px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .banner-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .banner-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 18px;
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    .banner-description{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    /* ------------------------------
+        popular collection  style 
+    --------------------------------- */
+    .products{
+        margin-top: 100px;
+        overflow: hidden;
+    }
+    .products h1{
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    .products-unit{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+    .product{
+      margin-bottom: 18px;
+      /* width: 329px;
+      height: 476px; */
+      max-width: 250px;
+      height: auto;
+    }
+    
+    .product img{
+        width: 100%;
+    } 
+    .product p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .see-more{
+        /* text-align: right;
+        margin-left: 0;
+        margin-right: 26px; */
         display: none;
+    
+    }
+    /* --------------------
+        testimonials style 
+    ---------------------*/
+    .testimonials-unit{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .testimonial{
+        /* width: 300px; */
+        max-width: 220px;
+      height: auto;
+    }
+    /* ------------------------------
+        footer style 
+    --------------------------------- */
+    footer{
+        height: 211px;
+    }
+    footer h2{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    .social-icons{
+        margin-top: 22px;
+    }
+    .social-icons a{
+        font-size: 12px;
+        margin: 0 2px;
+        padding: 5px 9px; 
+    }
+}
+/* Tablet devices */
+@media screen and (min-width: 688px) and (max-width:1024px){
+     /* ------------------
+        header style 
+    ---------------------*/
+    header{
+        max-height: 680px;
+    }
+    ul{
+        display: none;
+    }
+    .navbar{
+        justify-content: center;
+    }
+    .nav-logo h3{
+        font-size: 30px;
+    }
+    .banner{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 50px;
+        padding: 0 30px;
+    }
+    .banner-image{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .banner-image img{
+        width: 88%;
+        height: 88%;
+        object-fit: cover;
+    }
+    .banner-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;   
+    }
+    .banner-title{
+        font-size: 32px;
+        line-height: 1.2;
+    }
+    .banner-description{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .products-unit{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+    /* --------------------
+        testimonials style 
+    ---------------------*/
+    .testimonials-unit{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .testimonial{
+        width: 320px;
     }
 }
