@@ -272,9 +272,9 @@ footer p{
     /* ------------------
         header style 
     ---------------------*/
-    header{
-        max-height: 680px;
-    }
+    /* header{
+        min-height: 680px;
+    } */
     ul{
         display: none;
     }
